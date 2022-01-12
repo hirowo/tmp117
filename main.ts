@@ -45,6 +45,7 @@ namespace Grove_TMP117 {
         let buf: Buffer = pins.createBuffer(2);
         let tmp = new TMP117;
         let temp2 : number;
+        N = 0;
         while (N < 36) {
             tmp.TMP117WReg3(73);
             basic.pause(20);
